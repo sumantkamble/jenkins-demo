@@ -2,8 +2,5 @@ library identifier: 'pipeline-libs@main', retriever: modernSCM([$class: 'GitSCMS
 
 node {
     checkout scm
-    pipelineSettings.stages.eachWithIndex { stage, i ->
-        def performOfflineTests = i == 0
-        sayHello("Sumant")
-    }
+    sayHello("Sumant")
 }
